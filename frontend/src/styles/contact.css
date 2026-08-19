@@ -1,0 +1,140 @@
+.contact-section {
+  width: 100%;
+  padding: 90px 7%;
+  background: #f5f8ff;
+}
+
+.contact-container {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+/* Heading */
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.contact-label {
+  display: inline-block;
+  color: #3155d9;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.contact-header h2 {
+  margin: 0;
+  color: #173b8f;
+  font-size: 38px;
+  font-weight: 700;
+}
+
+.contact-header p {
+  max-width: 650px;
+  margin: 15px auto 0;
+  color: #64748b;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* Cards */
+
+.contact-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.contact-card {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  padding: 28px 24px;
+
+  background: #ffffff;
+  border: 1px solid #e1e8f7;
+  border-radius: 14px;
+
+  box-shadow: 0 6px 20px rgba(42, 75, 150, 0.07);
+
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(42, 75, 150, 0.12);
+}
+
+/* Icons */
+
+.contact-icon {
+  min-width: 48px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+
+  background: #e8efff;
+  color: #3155d9;
+
+  font-size: 23px;
+  font-weight: 600;
+}
+
+/* Text */
+
+.contact-card h3 {
+  margin: 0 0 6px;
+  color: #173b8f;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.contact-card p {
+  margin: 0 0 4px;
+  color: #334155;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.contact-card span {
+  color: #7a879b;
+  font-size: 13px;
+}
+
+/* Responsive */
+
+@media (max-width: 850px) {
+  .contact-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-section {
+    padding: 70px 5%;
+  }
+
+  .contact-header h2 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 500px) {
+  .contact-header h2 {
+    font-size: 28px;
+  }
+
+  .contact-header p {
+    font-size: 14px;
+  }
+
+  .contact-card {
+    padding: 22px 18px;
+  }
+}

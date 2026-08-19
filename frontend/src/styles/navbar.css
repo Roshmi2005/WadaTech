@@ -1,0 +1,224 @@
+/* Google Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+    width: 100%;
+    height: 80px;
+
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+
+    padding: 0 60px;
+
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,.08);
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+/* Logo */
+
+.navbar-logo{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    justify-self: start;
+}
+
+.navbar-logo img{
+    width: 55px;
+}
+
+.navbar-logo h2{
+    font-size: 2rem;
+    color: #3A4DE0;
+    font-weight: 700;
+}
+
+.navbar-logo img{
+
+    width:58px;
+
+}
+
+.navbar-logo h2{
+
+    color:#3A4DE0;
+    font-size:2rem;
+    font-weight:700;
+
+}
+
+/* Links */
+
+.nav-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 38px;
+
+    list-style: none;
+
+    justify-self: center;
+}
+
+.nav-links a{
+
+    text-decoration:none;
+
+    color:#2D3648;
+
+    font-size:16px;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+.nav-links a:hover{
+
+    color:#3A4DE0;
+
+}
+
+/* Buttons */
+
+.desktop-buttons{
+    display: flex;
+    justify-self: end;
+    align-items: center;
+    gap: 10px;
+}
+
+.login-btn{
+    width: 135px;
+    height: 48px;
+
+    border-radius: 999px;
+    border: 2px solid #1F2937;
+
+    background: white;
+    color: #1F2937;
+
+    font-size: 16px;
+    font-weight: 500;
+
+    cursor: pointer;
+    transition: .3s;
+}
+
+.login-btn:hover{
+    background: #f5f5f5;
+}
+
+.register-btn{
+    width: 135px;
+    height: 48px;
+
+    border-radius: 999px;
+    border: none;
+
+    background: #4F46E5;
+    color: white;
+
+    font-size: 16px;
+    font-weight: 500;
+
+    cursor: pointer;
+    transition: .3s;
+}
+
+.register-btn:hover{
+    background: #4338ca;
+}
+
+.menu-icon{
+
+    display:none;
+
+    font-size:28px;
+
+    cursor:pointer;
+
+}
+
+.mobile-buttons{
+
+    display:none;
+
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:992px){
+
+.nav-links{
+
+position:absolute;
+
+top:80px;
+
+left:-100%;
+
+flex-direction:column;
+
+background:white;
+
+width:100%;
+
+padding:30px;
+
+gap:25px;
+
+box-shadow:0 10px 20px rgba(0,0,0,.1);
+
+transition:.4s;
+
+}
+
+.nav-links.active{
+
+left:0;
+
+}
+
+.desktop-buttons{
+
+display:none;
+
+}
+
+.mobile-buttons{
+
+display:flex;
+
+flex-direction:column;
+
+gap:15px;
+
+}
+
+.menu-icon{
+
+display:block;
+
+}
+
+}
