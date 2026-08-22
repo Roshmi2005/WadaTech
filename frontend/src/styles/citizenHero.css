@@ -1,0 +1,93 @@
+.citizen-hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 620px;
+  background: linear-gradient(135deg, #eaf2ff, #f6f4ff);
+  overflow: hidden;
+  padding: 0 48px;
+}
+
+/* Full-bleed image on the right, fading into the background on its left edge */
+.citizen-hero-bg-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    rgba(0, 0, 0, 0.15) 20%,
+    rgba(0, 0, 0, 0.55) 35%,
+    black 90%
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    rgba(0, 0, 0, 0.15) 20%,
+    rgba(0, 0, 0, 0.55) 35%,
+    black 90%
+  );
+  pointer-events: none;
+}
+
+.citizen-hero-text {
+  position: relative;
+  z-index: 2;
+  max-width: 480px;
+}
+
+.citizen-hero-heading {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-size: 40px;
+  color: #0e0f0f;
+  margin: 0 0 12px;
+  line-height: 1.2;
+}
+
+.citizen-hero-np {
+  color: #3a4de0;
+  font-size: 16px;
+  margin: 0 0 28px;
+}
+
+.citizen-hero-highlights {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.citizen-highlight-pill {
+  background: #ffffff;
+  color: #1e2a4a;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 12px 20px;
+  border-radius: 999px;
+  box-shadow: 0 6px 18px rgba(58, 77, 224, 0.15);
+}
+
+.citizen-highlight-pill:hover {
+  background: #3a4de0;
+  color: #fff;
+}
+
+@media (max-width: 900px) {
+  .citizen-hero {
+    min-height: 480px;
+    padding: 40px 24px;
+  }
+
+  .citizen-hero-bg-image {
+    display: none;
+  }
+
+  .citizen-hero-heading {
+    font-size: 28px;
+  }
+}

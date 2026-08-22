@@ -1,0 +1,117 @@
+.profile-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 48px 24px 80px;
+}
+
+.profile-header-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 28px 32px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  margin-bottom: 28px;
+}
+
+.profile-avatar-large {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: #3a4de0;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.profile-name {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-size: 24px;
+  color: #1e2a4a;
+  margin: 0 0 4px;
+}
+
+.profile-subtext {
+  color: #6b7280;
+  font-size: 14px;
+  margin: 0;
+}
+
+.profile-edit-btn {
+  margin-left: auto;
+  background: #3a4de0;
+  color: #fff;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.profile-edit-btn:hover {
+  background: #2f3fc0;
+}
+
+.profile-details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.profile-detail-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 26px 28px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.profile-detail-card h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  color: #1e2a4a;
+  margin: 0 0 18px;
+}
+
+.profile-detail-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #f0f0f5;
+  font-size: 14px;
+}
+
+.profile-detail-row:last-child {
+  border-bottom: none;
+}
+
+.profile-detail-row span:first-child {
+  color: #6b7280;
+}
+
+.profile-detail-row span:last-child {
+  color: #1e2a4a;
+  font-weight: 600;
+  text-align: right;
+}
+
+@media (max-width: 700px) {
+  .profile-header-card {
+    flex-wrap: wrap;
+  }
+
+  .profile-edit-btn {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .profile-details-grid {
+    grid-template-columns: 1fr;
+  }
+}

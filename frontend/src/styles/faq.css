@@ -24,7 +24,7 @@
   margin: 0;
   font-size: 40px;
   font-weight: 700;
-  color: #4053d8;
+  color: #3A4DE0;
 }
 
 .faq-heading p {
@@ -100,12 +100,12 @@
 
 .faq-question:hover {
   background: #f5f6ff;
-  color: #4053d8;
+  color: #3A4DE0;
 }
 
 .faq-question svg {
   flex-shrink: 0;
-  color: #4053d8;
+  color: #3A4DE0;
   font-size: 14px;
 }
 
@@ -115,12 +115,12 @@
 
 .faq-item.open .faq-question {
   background: #eef1ff;
-  color: #4053d8;
+  color: #3A4DE0;
   font-weight: 600;
 }
 
 .faq-item.open .faq-question svg {
-  color: #4053d8;
+  color: #3A4DE0;
 }
 
 /* =========================

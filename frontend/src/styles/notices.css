@@ -1,0 +1,54 @@
+.notices-section {
+  padding: 60px 48px;
+  text-align: center;
+  background: #f9f9fd;
+}
+
+.notices-eyebrow {
+  color: #3a4de0;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 13px;
+  margin: 0 0 8px;
+}
+
+.notices-heading {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-size: 32px;
+  color: #1e2a4a;
+  margin: 0 0 36px;
+}
+
+.notices-grid {
+  display: flex;
+  gap: 24px;
+  max-width: 900px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.notice-card {
+  flex: 1 1 380px;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 24px;
+  text-align: left;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+}
+
+.notice-card h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  color: #1e2a4a;
+  margin: 0 0 14px;
+}
+
+.notice-card ul {
+  margin: 0;
+  padding-left: 18px;
+  color: #1e2a4a;
+  font-size: 14px;
+  line-height: 1.8;
+}
