@@ -2,6 +2,7 @@ import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import "../../styles/navbar.css";
 import logo from "../../assets/logo/logo.webp";
+import { Link } from "react-router-dom";
 
 
 
@@ -25,16 +26,18 @@ function Navbar() {
     
         <li><a href="#contact">Contact</a></li>
         <li><a href="#faq">FAQ</a></li>
+        <li><Link to="/inquiries">Inquiries</Link></li>
+
 
         <div className="mobile-buttons">
-          <button className="login-btn">Login In</button>
+          <button className="login-btn">Login </button>
           <button className="register-btn">Register</button>
         </div>
       </ul>
 
       <div className="desktop-buttons">
-        <button className="login-btn">Login In</button>
-        <button className="register-btn">Register</button>
+       <Link to={"/login"}> <button className="login-btn">Login </button></Link>
+       <Link to={"/register"}> <button className="register-btn">Register</button></Link>
       </div>
 
       <div

@@ -1,6 +1,8 @@
 import { useRef } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import "../../styles/services.css";
+import { Link } from "react-router-dom";
+import { slugify } from "../../utils/slugify";
 
 function Services() {
   const servicesRef = useRef(null);
@@ -81,9 +83,9 @@ function Services() {
 
                 <p>{service.description}</p>
 
-                <a href="#">
-                  View Service →
-                </a>
+              <Link to={`/citizen/services/${slugify(service.title)}`}>
+  View Service →
+</Link>
 
               </div>
             ))}

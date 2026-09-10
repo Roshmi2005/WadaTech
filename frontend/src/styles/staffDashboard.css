@@ -1,0 +1,262 @@
+/* ---------------- Hero ---------------- */
+
+.staff-hero {
+  background: linear-gradient(135deg, #eaf2ff, #f6f4ff);
+  padding: 48px;
+  text-align: left;
+}
+
+.staff-hero h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-size: 32px;
+  color: #1e2a4a;
+  margin: 0 0 8px;
+}
+
+.staff-hero p {
+  color: #6b7280;
+  font-size: 15px;
+  margin: 0;
+}
+
+/* ---------------- Shared section ---------------- */
+
+.staff-section {
+  padding: 48px;
+}
+
+.staff-section h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-size: 24px;
+  color: #1e2a4a;
+  margin: 0 0 24px;
+}
+
+/* ---------------- Requests table ---------------- */
+
+.staff-table-wrap {
+  overflow-x: auto;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.staff-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.staff-table th,
+.staff-table td {
+  text-align: left;
+  padding: 14px 20px;
+  border-bottom: 1px solid #f0f0f5;
+  white-space: nowrap;
+}
+
+.staff-table th {
+  color: #6b7280;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.staff-table td {
+  color: #1e2a4a;
+}
+
+.status-badge {
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.status-pending {
+  background: #fff4e0;
+  color: #b8790a;
+}
+
+.status-approved {
+  background: #e4f8ec;
+  color: #1e9e5c;
+}
+
+.status-rejected {
+  background: #fdeef0;
+  color: #e0334d;
+}
+
+.staff-action-cell {
+  display: flex;
+  gap: 8px;
+}
+
+.approve-btn,
+.reject-btn {
+  border: none;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.approve-btn {
+  background: #e4f8ec;
+  color: #1e9e5c;
+}
+
+.approve-btn:hover:not(:disabled) {
+  background: #1e9e5c;
+  color: #fff;
+}
+
+.reject-btn {
+  background: #fdeef0;
+  color: #e0334d;
+}
+
+.reject-btn:hover:not(:disabled) {
+  background: #e0334d;
+  color: #fff;
+}
+
+.approve-btn:disabled,
+.reject-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* ---------------- Notices & Events form ---------------- */
+
+.post-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.post-form select,
+.post-form input {
+  padding: 10px 14px;
+  border: 1.5px solid #e2e5f1;
+  border-radius: 10px;
+  font-size: 14px;
+  outline: none;
+}
+
+.post-form input[type="text"] {
+  flex: 1;
+  min-width: 160px;
+}
+
+.post-form select:focus,
+.post-form input:focus {
+  border-color: #3a4de0;
+}
+
+.post-form button {
+  background: #3a4de0;
+  color: #fff;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.post-form button:hover {
+  background: #2f3fc0;
+}
+
+/* ---------------- Post filter ---------------- */
+
+.post-filter {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.post-filter button {
+  border: 1px solid #e2e5f1;
+  background: #fff;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #6b7280;
+  cursor: pointer;
+}
+
+.post-filter button.active {
+  background: #3a4de0;
+  color: #fff;
+  border-color: #3a4de0;
+}
+
+/* ---------------- Post list ---------------- */
+
+.post-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.post-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.post-tag {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border-radius: 999px;
+  margin-bottom: 10px;
+}
+
+.post-tag-notice {
+  background: #fff4e0;
+  color: #b8790a;
+}
+
+.post-tag-event {
+  background: #e6e9ff;
+  color: #3a4de0;
+}
+
+.post-card h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: #1e2a4a;
+  margin: 0 0 6px;
+}
+
+.post-date {
+  color: #6b7280;
+  font-size: 13px;
+  margin: 0 0 8px;
+}
+
+.delete-post-btn {
+  margin-top: 12px;
+  border: none;
+  background: none;
+  color: #e0334d;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+}
+
+.delete-post-btn:hover {
+  text-decoration: underline;
+}

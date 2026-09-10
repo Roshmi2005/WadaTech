@@ -1,0 +1,249 @@
+.service-header {
+  background: linear-gradient(135deg, #eaf2ff, #f6f4ff);
+  padding: 40px 48px 28px;
+}
+
+.service-back-link {
+  display: inline-block;
+  color: #3a4de0;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+  margin-bottom: 12px;
+}
+
+.service-back-link:hover {
+  text-decoration: underline;
+}
+
+.service-header h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-size: 32px;
+  color: #1e2a4a;
+  margin: 0 0 8px;
+}
+
+.service-description {
+  color: #6b7280;
+  font-size: 15px;
+  margin: 0;
+  max-width: 560px;
+}
+
+.service-not-found {
+  text-align: center;
+  padding: 80px 24px;
+}
+
+/* ---------------- Tabs ---------------- */
+
+.service-tabs {
+  display: flex;
+  gap: 8px;
+  padding: 0 48px;
+  border-bottom: 1px solid #eee;
+  overflow-x: auto;
+}
+
+.service-tabs button {
+  border: none;
+  background: none;
+  padding: 16px 18px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #6b7280;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  white-space: nowrap;
+}
+
+.service-tabs button.active {
+  color: #3a4de0;
+  border-bottom-color: #3a4de0;
+}
+
+.service-tab-content {
+  padding: 40px 48px 80px;
+}
+
+.service-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 32px;
+  max-width: 700px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.service-card h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  color: #1e2a4a;
+  margin: 0 0 14px;
+}
+
+.service-card ol,
+.service-card ul {
+  margin: 0 0 24px;
+  padding-left: 20px;
+  color: #1e2a4a;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.service-fee-note {
+  font-weight: 700;
+  color: #3a4de0;
+  font-size: 15px;
+}
+
+/* ---------------- Application form ---------------- */
+
+.service-success {
+  background: #e4f8ec;
+  color: #1e9e5c;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-size: 13px;
+  margin-bottom: 18px;
+}
+
+.service-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.service-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.service-field label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #1e2a4a;
+}
+
+.service-field input,
+.service-field textarea {
+  padding: 12px 14px;
+  border: 1.5px solid #e2e5f1;
+  border-radius: 10px;
+  font-size: 14px;
+  outline: none;
+  font-family: inherit;
+}
+
+.service-field textarea {
+  resize: vertical;
+}
+
+.service-field input:focus,
+.service-field textarea:focus {
+  border-color: #3a4de0;
+}
+
+.service-submit-btn {
+  margin-top: 8px;
+  background: #3a4de0;
+  color: #fff;
+  border: none;
+  padding: 13px 0;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.service-submit-btn:hover {
+  background: #2f3fc0;
+}
+
+/* ---------------- Payment ---------------- */
+
+.payment-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.payment-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 16px;
+  background: #f9f9fd;
+  border-radius: 12px;
+  font-size: 14px;
+}
+
+.payment-row button {
+  background: #3a4de0;
+  color: #fff;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.payment-row button:hover {
+  background: #2f3fc0;
+}
+
+/* ---------------- Track table ---------------- */
+
+.service-track-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.service-track-table th,
+.service-track-table td {
+  text-align: left;
+  padding: 12px 10px;
+  border-bottom: 1px solid #f0f0f5;
+}
+
+.service-track-table th {
+  color: #6b7280;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.track-status,
+.track-payment {
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.track-submitted {
+  background: #fff4e0;
+  color: #b8790a;
+}
+
+.track-approved {
+  background: #e4f8ec;
+  color: #1e9e5c;
+}
+
+.track-rejected {
+  background: #fdeef0;
+  color: #e0334d;
+}
+
+.track-unpaid {
+  background: #fdeef0;
+  color: #e0334d;
+}
+
+.track-paid {
+  background: #e4f8ec;
+  color: #1e9e5c;
+}

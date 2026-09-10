@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import logo from "../../assets/logo/logo.webp";
 import "../../styles/citizenNavbar.css";
 
@@ -41,6 +41,8 @@ const CitizenNavbar = ({ userName = "Citizen" }) => {
             <a href={link.href}>{link.label}</a>
           </li>
         ))}
+        <li><Link to="/inquiries">Inquiries</Link></li>
+
       </ul>
 
       <div className="citizen-navbar-profile">
