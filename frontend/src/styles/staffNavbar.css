@@ -1,0 +1,105 @@
+.staff-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 48px;
+  background: #ffffff;
+  border-bottom: 1px solid #eee;
+}
+
+.staff-navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-size: 22px;
+  color: #3a4de0;
+}
+
+.staff-logo-img {
+  height: 38px;
+  width: 38px;
+  object-fit: contain;
+}
+
+.staff-navbar-links {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.staff-navbar-links a {
+  text-decoration: none;
+  color: #1e2a4a;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.staff-navbar-links a:hover {
+  color: #3a4de0;
+}
+
+.staff-navbar-profile {
+  position: relative;
+}
+
+.staff-avatar-btn {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: none;
+  background: #3a4de0;
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.staff-profile-dropdown {
+  position: absolute;
+  right: 0;
+  top: 52px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  min-width: 150px;
+  z-index: 10;
+}
+
+.staff-profile-name {
+  font-weight: 700;
+  font-size: 14px;
+  color: #1e2a4a;
+  margin: 0 0 8px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #eee;
+}
+
+.staff-profile-dropdown button {
+  background: none;
+  border: none;
+  text-align: left;
+  padding: 8px 4px;
+  font-size: 14px;
+  color: #1e2a4a;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.staff-profile-dropdown button:hover {
+  background: #f2f2ff;
+  color: #3a4de0;
+}
+
+@media (max-width: 900px) {
+  .staff-navbar-links {
+    display: none;
+  }
+}
